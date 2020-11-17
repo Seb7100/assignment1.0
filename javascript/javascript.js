@@ -1,4 +1,12 @@
+let udregning = [22, 80, 50, 70];
 
+const die = function () {
+    var i = + 200;
+    return udregning [3] + i;
+}
+document.getElementById('flex-box8').innerHTML = die();
+
+//Hvorfor kommer den ikke frem
 
 //From Celcius to Fahrenheit
 

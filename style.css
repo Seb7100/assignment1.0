@@ -11,8 +11,27 @@ body {
     background-repeat: no-repeat;
     
 }
-
+#overlay {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  margin-top: -150px;
+}
+#baggrundsfilm {
+  margin-top: -150px;
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
 .header-box {
+    z-index: 99999;
     width: 100%; 
     display: flex; 
     flex-direction: row; 
@@ -21,6 +40,7 @@ body {
 }
 
 .logo {
+    z-index: 9999;
     width:30%; 
     padding: 35px;
 }
@@ -78,6 +98,7 @@ ul {
   }
 
   .flex-column1 {
+    z-index: 2;
       width: 50%;
       background: rgba(105, 105, 105, 0.342);
       height: 500px;
@@ -88,6 +109,7 @@ ul {
   }
 
   .flex-column2 {
+    z-index: 2;
     width: 100%;
     background: rgba(105, 105, 105, 0.342);
     height: 500px;
@@ -96,6 +118,7 @@ ul {
 }
 
   .flex-box {
+    z-index: 3;
       width: 50%;
       background: white;
       margin: 10px;
@@ -103,6 +126,7 @@ ul {
   }
 
   .flex-box1, .flex-box2 {
+    z-index: 4;
     width: 50%;
     background: white;
     margin: 10px;
@@ -111,6 +135,7 @@ ul {
 
   #flex-box2, #flex-box3, #flex-box4, #flex-box5, #flex-box6, #flex-box7 {
     background: white;
+    z-index: 9;
     margin: auto;
     display: flex;
     padding: 20px 25px;
